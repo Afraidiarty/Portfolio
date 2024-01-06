@@ -1,0 +1,757 @@
+<style>
+
+
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="main.css">
+
+</head>
+<body>
+
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="stripe-loader">
+                <span>L</span>
+                <span>O</span>
+                <span>A</span>
+                <span>D</span>
+                <span>I</span>
+                <span>N</span>
+                <span>G</span>
+                
+                <div class="covers">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="loader-after"></div>
+
+    <div id="sidebarTheme" class="sidebar">
+        <div class="main-menu-bar">
+            <img style="cursor: pointer;"  src="ico/home-button.png" alt="" onmouseover="showTooltip('Home', this)" onmouseout="hideTooltip()">
+            <img  id="CustomModal" style="cursor: pointer;" src="ico/settings.png" alt="" onmouseover="showTooltip('Settings', this)" onmouseout="hideTooltip()">
+        </div>
+    
+        <div class="sociall">
+            <img src="ico/facebook.png" alt="" onmouseover="showTooltip('Facebook', this)" onmouseout="hideTooltip()">
+            <img src="ico/twitter.png" alt="" onmouseover="showTooltip('Twitter', this)" onmouseout="hideTooltip()">
+            <img src="ico/git-hub.png" alt="" onmouseover="showTooltip('GitHub', this)" onmouseout="hideTooltip()">
+        </div>
+    
+        <div id="tooltip" class="tooltip"></div>
+    </div>
+
+    <header>
+        <div class="h-content">
+            <i id="CustomModalB" class="uil uil-bars burger"></i>
+        </div>
+    </header>
+
+    <main class="main-info">
+        <div class="slider">
+            <div class="slide" style="visibility: visible;" >
+
+
+                    <div class="content">
+                        <h3>Hey!</h3>
+                        <h2>I am <span id="IAM" class="IAM" ></span></h2>
+                        <p>Dolor commodo ipsum sint commodo elit sunt cupidatat qui.</p>
+                        <br>
+                        <a href="#" class="btn1" id="btn1" id="">Contact Me!</a>
+                    </div>
+
+                    <div class="content-r">
+                        <div class="cube">
+                            <div>
+                                <div id="top" class="top"></div>
+                                <span class="RedCube" id="GreenCube" style="--i:0" ></span>
+                                <span class="RedCube" id="GreenCube" style="--i:1" ></span>
+                                <span class="RedCube" id="GreenCube" style="--i:2" ></span>
+                                <span class="RedCube" id="GreenCube" style="--i:3" ></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+
+                <div class="slide" style="opacity: 1;display: none;">
+                        <div class="services_">
+                            <h2>What I Offer</h2> 
+                            <div class="services_container">
+                                <!-- <div class="services_content">
+                                    <div>
+                                       <h3 class="services_title" >Web <br> Designer </h3> 
+                                    </div>
+                                    <span class="services_button">
+                                        View More
+                                    </span>
+                                    <div class="services_modal">
+                                        <div class="services_modal_content">
+                                            иконка 
+                                            <h3 class="services_modal_title" >Web Designer</h3>
+                                            <p class="services_modal_description">
+
+                                            </p>
+                                            <ul class="services_modal-services a">
+                                                <li class="services_modad-services">
+
+                                                    <p class="services_modal_info">
+
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    
+                                </div>
+                            </div> -->
+
+
+                            <div id="cardTheme" class="card">
+                                <div class="icon">
+                                    <i class="uil uil-web-grid" ></i>
+                                </div><br>
+                                <span>Web Designer</span><br><br>
+                                <a  class="RedGreen"  id="viewMore">View More →</a>
+
+                                <div class="services_modal" id="modal">
+                                    <div class="services_modal_content">
+                                        <i class="uil uil-times services_modal_close"></i>
+                                        <h3 class="services_modal_title">Web Designer</h3>
+                                        <p class="services_modal_description">
+                                            Experience in web design to create unique and attractive websites.
+                                        </p><br>
+                                
+                                        <ul class="services_modal-services">
+                                            <li class="services_modal_info">
+                                                <i class="uil uil-check-circle"></i>
+                                                Creating a unique design that combines aesthetics and functionality.
+                                            </li>
+                                            <li class="services_modal_info">
+                                                <i class="uil uil-check-circle"></i>
+                                                Developing an intuitive user interface to improve user experience on the website.
+                                            </li>
+                                            <li class="services_modal_info">
+                                                <i class="uil uil-check-circle"></i>
+                                                Supporting the client in the design decision-making process.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div id="cardTheme" class="card">
+                                <div class="icon">
+                                    <i class="uil uil-arrow" ></i>
+                                </div><br>
+                                <span>Fullstack Developer</span><br><br>
+                                <a class="RedGreen"  id="viewMore_1">View More →</a>
+                            
+                                <div class="services_modal" id="modal_1">
+                                    <div class="services_modal_content">
+                                        <i class="uil uil-times services_modal_close_1"></i>
+                                        <h3 class="services_modal_title">Fullstack Developer</h3>
+                                        <p class="services_modal_description">
+                                            Proficient in fullstack development, creating robust and scalable web applications with expertise in both frontend and backend technologies.
+                                        </p><br>
+                            
+                                        <ul class="services_modal-services">
+                                            <li class="services_modal_info">
+                                                <i class="uil uil-check-circle"></i>
+                                                Developing dynamic and responsive user interfaces using modern frontend frameworks and technologies.
+                                            </li>
+                                            <li class="services_modal_info">
+                                                <i class="uil uil-check-circle"></i>
+                                                Building and maintaining secure and efficient server-side applications to handle complex business logic.
+                                            </li>
+                                            <li class="services_modal_info">
+                                                <i class="uil uil-check-circle"></i>
+                                                Integrating databases and APIs to ensure seamless data flow and functionality across the entire application.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            
+                            <div id="cardTheme" class="card">
+                                <div class="icon">
+                                    <img src="ico/ux.png" alt="">
+                                </div><br>
+                                <span>UX/UI Designer</span><br><br>
+                                <a class="RedGreen" id="viewMore_2">View More →</a>
+                            
+                                <div class="services_modal" id="modal_2">
+                                    <div class="services_modal_content">
+                                        <i class="uil uil-times services_modal_close_2"></i>
+                                        <h3 class="services_modal_title">UX/UI Designer</h3>
+                                        <p class="services_modal_description">
+                                            Creative UX/UI designer with a passion for crafting visually appealing and user-friendly interfaces to enhance overall user experiences.
+                                        </p><br>
+                            
+                                        <ul class="services_modal-services">
+                                            <li class="services_modal_info">
+                                                <i id="CLRS" class="uil uil-check-circle"></i>
+                                                Designing intuitive and engaging user interfaces that align with user needs and business goals.
+                                            </li>
+                                            <li class="services_modal_info">
+                                                <i id="CLRS" class="uil uil-check-circle"></i>
+                                                Conducting user research and usability testing to inform design decisions and improve user interactions.
+                                            </li>
+                                            <li class="services_modal_info">
+                                                <i id="CLRS" class="uil uil-check-circle"></i>
+                                                Collaborating with cross-functional teams to ensure a seamless and visually cohesive user experience across platforms.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>     
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" style="display: none;">
+                    <div class="services_">
+                        <h1 style="text-align: center;">My Technology</h1>
+                        <div class="skills_container">
+                            
+
+                            <div class="skills_container container grid">
+                                <div class="skills_tabs">
+
+                                    <div id="front-arrow" class="skills_header">
+                                        <i id="CLRS" class="uil uil-brackets-curly skills_icon"></i>
+                                        <div>
+                                            <h1 class="skills_title">Frontend Developer</h1>
+                                            <span class="skills_subtitle">Experience withing 3 years</span>
+                                        </div>
+                                        <i id="CLRS" id="arrow" class="uil uil-angle-right skills_arrow"></i>
+                                    </div>
+                                    <br><br>
+                                    <div id = "UX_UI-arrow" class="skills_header">
+                                        <i id="CLRS" class="uil uil-compress skills_icon UX"></i>
+                                        <div>
+                                            <h1 class="skills_title">UX/UI DESIGNER</h1>
+                                            <span class="skills_subtitle">Experience withing 3 years</span>
+                                        </div>
+                                        <i  id="CLRS" class="uil uil-angle-right skills_arrow"></i>
+                                    </div>
+
+                                    <div id="backend-arrow" class="skills_header">
+                                        <i id="CLRS" class="uil uil-database  skills_icon"></i>
+                                        <div>
+                                            <h1 class="skills_title">Backend Developer</h1>
+                                            <span class="skills_subtitle">Experience withing 3 years</span>
+                                        </div>
+                                        <i id="CLRS" id="backend-arrow" class="uil uil-angle-right skills_arrow"></i>
+                                    </div>
+                         
+
+                                </div>
+
+                                <div class="skills_content">
+                                    <div class="skills_group">
+                                        <div class="skills_list grid">
+                                            <div id="html" class="skills_data" style="visibility: hidden;">
+                                                <h3 class="skills_name">HTML</h3>
+                                                <span class="skills_num">90%</span>
+                                                <div class="skills_bar sk_1">
+                                                    <span class="skills_line sk_1" style="width: 90%;"></span>
+                                                </div>
+                                            </div>
+
+                                            <div id="css" class="skills_data"  style="visibility: hidden;">
+                                                <h3 class="skills_name">CSS</h3>
+                                                <span class="skills_num sk_2">80%</span>
+                                                <div class="skills_bar sk_2">
+                                                    <span class="skills_line sk_2" style="width: 90%;"></span>
+                                                </div>
+                                            </div>
+
+                                            <div id="js" class="skills_data"  style="visibility: hidden;">
+                                                <h3 class="skills_name">JavaScript</h3>
+                                                <span class="skills_num sk_3">60%</span>
+                                                <div class="skills_bar sk_3">
+                                                    <span class="skills_line sk_3" style="width: 90%;"></span>
+                                                </div>
+                                            </div>
+
+                                            <div id="jquery" class="skills_data"  style="visibility: hidden;">
+                                                <h3 class="skills_name">Jquery</h3>
+                                                <span class="skills_num sk_4">40%</span>
+                                                <div class="skills_bar sk_4">
+                                                    <span class="skills_line sk_4" style="width: 90%;"></span>
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div id="Photoshop" class="skills_data"  style="visibility: hidden;" >
+                                                <h3 class="skills_name">Photoshop</h3>
+                                                <span class="skills_num sk_5">50%</span>
+                                                <div class="skills_bar sk_5"> 
+                                                    <span class="skills_line sk_5" style="width: 40%;"></span>
+                                                </div>
+                                            </div>
+
+                                            <div id="Figma" class="skills_data"  style="visibility: hidden;">
+                                                <h3 class="skills_name">Figma</h3>
+                                                <span class="skills_num sk_6">40%</span>
+                                                <div class="skills_bar sk_6">
+                                                    <span class="skills_line sk_6" style="width: 40%;"></span>
+                                                </div>
+                                            </div>  
+
+                                            <br>
+
+                                            <div id = "php" class="skills_data"  style="visibility: hidden;">
+                                                <h3 class="skills_name">php</h3>
+                                                <span class="skills_num sk_7">80%</span>
+                                                <div class="skills_bar sk_7">
+                                                    <span class="skills_line sk_7" style="width: 90%;"></span>
+                                                </div>
+                                            </div>  
+
+                                            <div id = "mysql" class="skills_data"  style="visibility: hidden;">
+                                                <h3 class="skills_name">MySQL</h3>
+                                                <span class="skills_num sk_8">95%</span>
+                                                <div class="skills_bar sk_8">
+                                                    <span class="skills_line sk_8" style="width: 90%;"></span>
+                                                </div>
+                                            </div> 
+
+                                            <div id = "laravel" class="skills_data"  style="visibility: hidden;">
+                                                <h3 class="skills_name">Laravel</h3>
+                                                <span class="skills_num sk_9">30%</span>
+                                                <div class="skills_bar sk_9">
+                                                    <span class="skills_line sk_9" style="width: 90%;"></span>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                            
+                        </div>
+
+
+
+
+                        <!-- первый скилл -->
+
+                        <!-- Второй скилл -->
+                    </div>
+                </div>
+
+            </div>
+
+                <div class="right-arrow" onclick="nextSlide()">
+                    <span class="material-symbols-outlined arr">arrow_forward_ios</span>
+                </div>
+
+                    <div id="CloseModal" class="customise-theme">
+                        <div class="card-theme">
+                            <h2>Customize your view</h2>
+                            <span>Manage your color and background</span>
+                            <div class="color">
+                                <h3>Color</h3>
+                                <button class="button button4" onclick="Green('TextGreen' , 'btn1_Green' , 'GreenCube')" ></button>
+                                <button class="button button3" onclick="Standart()"></button>
+                            </div>
+                            <div class="background">
+                                <h3 style="color: white;">background</h3>
+                                <div class="choose-bg">
+                                    <div class="bg-2" onclick="changeThemeDim('dim-theme','card_dim_Theme')">
+                                        <span></span>
+                                        <h5>Dim</h5>
+                                    </div>
+                                    <div class="bg-3" onclick="changeThemeDark()">
+                                        <span></span>
+                                        <h5>Dark</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="contact" class="contactMe">
+                        <div class="contact-content">
+                                <h2>Contact Me!</h2>
+                                <input type="text" placeholder="Ivan" >
+                                <input type="email" placeholder="example@gmail.com" >
+                                <textarea placeholder="Messages" name="" id="" cols="30" rows="10"></textarea><br>
+                                <input type="submit" class="btn1" >
+                        </div>
+                    </div>
+                    <div class="right-content">
+                        <div class="right-content-block">
+                                <div class="close-block">
+                                    ff
+                                </div>
+                            <div class="text-element-block">
+                                <h2 class="nm" >IVAN</h2>
+                                <p>Возраст: 17</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur <br> adipiscing elit, sed do eiusmod tempor in <br> cididunt ut labore et dolo aliqua</p>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+        <main class="main-info mobile" >
+                        <div class="content">
+                            <h3>Hey!</h3>
+                            <h2>I am <span id="IAMMOBILE" class="IAM" ></span></h2>
+                            <p>Dolor commodo ipsum sint commodo elit sunt cupidatat qui.</p>
+                            <br>
+                            <a href="#" class="btn1" id="btn1" >Send me message!</a>
+                        </div>
+    
+                        <div class="content-r">
+                            <div class="cube">
+                                <div>
+                                    <div id="top" class="top"></div>
+                                    <span class="RedCube" id="GreenCube" style="--i:0" ></span>
+                                    <span class="RedCube" id="GreenCube" style="--i:1" ></span>
+                                    <span class="RedCube" id="GreenCube" style="--i:2" ></span>
+                                    <span class="RedCube" id="GreenCube" style="--i:3" ></span>
+                                </div>
+                            </div>
+                        </div>  
+    
+                            <div class="services_">
+                                <h2>What I Offer</h2>
+                                <div class="services_container mobile">
+                                     
+                                    <!-- <div class="services_content">
+                                        <div>
+                                           <h3 class="services_title" >Web <br> Designer </h3> 
+                                        </div>
+                                        <span class="services_button">
+                                            View More
+                                        </span>
+                                        <div class="services_modal">
+                                            <div class="services_modal_content">
+                                                иконка 
+                                                <h3 class="services_modal_title" >Web Designer</h3>
+                                                <p class="services_modal_description">
+    
+                                                </p>
+                                                <ul class="services_modal-services a">
+                                                    <li class="services_modad-services">
+    
+                                                        <p class="services_modal_info">
+    
+                                                        </p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+    
+                                        
+                                    </div>
+                                </div> -->
+    
+    
+                                <div id="cardTheme" class="card">
+                                    <div class="icon">
+                                        <i class="uil uil-web-grid" ></i>
+                                    </div><br>
+                                    <span>Web Designer</span><br>
+                                    <a  class="RedGreen" id="viewMore_mobile">View More →</a>
+    
+                                    <div class="services_modal" id="modal_mobile">
+                                        <div class="services_modal_content">
+                                            <i class="uil uil-times services_modal_close_mobile"></i>
+                                            <h3 class="services_modal_title">Web Designer</h3>
+                                            <p class="services_modal_description">
+                                                Experience in web design to create unique and attractive websites.
+                                            </p><br>
+                                    
+                                            <ul class="services_modal-services">
+                                                <li class="services_modal_info">
+                                                    <i class="uil uil-check-circle"></i>
+                                                    Creating a unique design that combines aesthetics and functionality.
+                                                </li>
+                                                <li class="services_modal_info">
+                                                    <i class="uil uil-check-circle"></i>
+                                                    Developing an intuitive user interface to improve user experience on the website.
+                                                </li>
+                                                <li class="services_modal_info">
+                                                    <i class="uil uil-check-circle"></i>
+                                                    Supporting the client in the design decision-making process, taking into account their needs and expectations.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+    
+                                <div id="cardTheme" class="card">
+                                    <div class="icon">
+                                        <i class="uil uil-arrow" ></i>
+                                    </div><br>
+                                    <span>Fullstack Developer</span>
+                                    <a class="RedGreen" id="viewMore_1_mobile">View More →</a>
+                                
+                                    <div class="services_modal" id="modal_1_mobile">
+                                        <div class="services_modal_content">
+                                            <i class="uil uil-times services_modal_close_1_mobile"></i>
+                                            <h3 class="services_modal_title">Fullstack Developer</h3>
+                                            <p class="services_modal_description">
+                                                Proficient in fullstack development, in both frontend and backend technologies.</p>
+                                
+                                            <ul class="services_modal-services">
+                                                <li class="services_modal_info">
+                                                    <i class="uil uil-check-circle"></i>
+                                                    Developing dynamic and responsive user interfaces using modern frontend frameworks and technologies.
+                                                </li>
+                                                <li class="services_modal_info">
+                                                    <i class="uil uil-check-circle"></i>
+                                                    Building and maintaining secure and efficient server-side applications to handle complex business logic.
+                                                </li>
+                                                <li class="services_modal_info">
+                                                    <i class="uil uil-check-circle"></i>
+                                                    Integrating databases and APIs to ensure seamless data flow and functionality across the entire application.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                
+                                <div id="cardTheme" class="card">
+                                    <div class="icon">
+                                        <img src="ico/ux.png" alt="">
+                                    </div><br>
+                                    <span>UX/UI Designer</span><br>
+                                    <a class="RedGreen" id="viewMore_2_mobile">View More →</a>
+                                
+                                    <div class="services_modal" id="modal_2_mobile">
+                                        <div class="services_modal_content">
+                                            <i class="uil uil-times services_modal_close_2_mobile"></i>
+                                            <h3 class="services_modal_title">UX/UI Designer</h3>
+                                            <p class="services_modal_description">
+                                                Creative UX/UI designer with a passion for crafting visually appealing and user-friendly interfaces to enhance overall user experiences.
+                                            </p>
+                                
+                                            <ul class="services_modal-services">
+                                                <li class="services_modal_info">
+                                                    <i id="CLRS" class="uil uil-check-circle"></i>
+                                                    Designing intuitive and engaging user interfaces that align with user needs and business goals.
+                                                </li>
+                                                <li class="services_modal_info">
+                                                    <i id="CLRS" class="uil uil-check-circle"></i>
+                                                    Conducting user research and usability testing to inform design decisions and improve user interactions.
+                                                </li>
+                                                <li class="services_modal_info">
+                                                    <i id="CLRS" class="uil uil-check-circle"></i>
+                                                    Collaborating with cross-functional teams to ensure a seamless and visually cohesive user experience across platforms.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>     
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="services_ mobile">
+                            
+                            <div class="skills_container mobile">
+                                
+    
+                                <div class="skills_container container grid">
+                                    <div class="skills_tabs">
+    
+                                        <div id="front-arrow" class="skills_header">
+                                            <i id="CLRS" class="uil uil-brackets-curly skills_icon"></i>
+                                            <div class="sk_t_s">
+                                                <h1 class="skills_title">Frontend Developer</h1>
+                                                <span class="skills_subtitle">Experience withing 3 years</span>
+                                            </div>
+                                            <i id="front-arrow CLRS" id="arrow" class="uil uil-angle-right skills_arrow"></i>
+                                        </div>
+                                        <br><br>
+                                        <div id = "UX_UI-arrow" class="skills_header">
+                                            <i id="CLRS" class="uil uil-compress skills_icon UX"></i>
+                                            <div class="sk_t_s">
+                                                <h1 class="skills_title">UX/UI DESIGNER</h1>
+                                                <span class="skills_subtitle">Experience withing 3 years</span>
+                                            </div>
+                                            <i  id="CLRS" class="uil uil-angle-right skills_arrow"></i>
+                                        </div>
+    
+                                        <div id="backend-arrow" class="skills_header">
+                                            <i id="CLRS" class="uil uil-database  skills_icon"></i>
+                                            <div class="sk_t_s" >
+                                                <h1 class="skills_title">Backend Developer</h1>
+                                                <span class="skills_subtitle">Experience withing 3 years</span>
+                                            </div>
+                                            <i id="CLRS" id="backend-arrow" class="uil uil-angle-right skills_arrow"></i>
+                                        </div>
+                             
+    
+                                    </div>
+    
+                                    <div class="skills_content">
+                                        <div class="skills_group">
+                                            <div class="skills_list grid">
+                                                <div id="html" class="skills_data">
+                                                    <h3 class="skills_name">HTML</h3>
+                                                    <span class="skills_num">90%</span>
+                                                    <div class="skills_bar sk_1">
+                                                        <span class="skills_line sk_1" style="width: 90%;"></span>
+                                                    </div>
+                                                </div>
+    
+                                                <div id="css" class="skills_data">
+                                                    <h3 class="skills_name">CSS</h3>
+                                                    <span class="skills_num sk_2">80%</span>
+                                                    <div class="skills_bar sk_2">
+                                                        <span class="skills_line sk_2" style="width: 90%;"></span>
+                                                    </div>
+                                                </div>
+    
+                                                <div id="js" class="skills_data">
+                                                    <h3 class="skills_name">JavaScript</h3>
+                                                    <span class="skills_num sk_3">60%</span>
+                                                    <div class="skills_bar sk_3">
+                                                        <span class="skills_line sk_3" style="width: 90%;"></span>
+                                                    </div>
+                                                </div>
+    
+                                                <div id="jquery" class="skills_data">
+                                                    <h3 class="skills_name">Jquery</h3>
+                                                    <span class="skills_num sk_4">40%</span>
+                                                    <div class="skills_bar sk_4">
+                                                        <span class="skills_line sk_4" style="width: 90%;"></span>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div id="Photoshop" class="skills_data">
+                                                    <h3 class="skills_name">Photoshop</h3>
+                                                    <span class="skills_num sk_5">50%</span>
+                                                    <div class="skills_bar sk_5"> 
+                                                        <span class="skills_line sk_5" style="width: 40%;"></span>
+                                                    </div>
+                                                </div>
+    
+                                                <div id="Figma" class="skills_data">
+                                                    <h3 class="skills_name">Figma</h3>
+                                                    <span class="skills_num sk_6">40%</span>
+                                                    <div class="skills_bar sk_6">
+                                                        <span class="skills_line sk_6" style="width: 40%;"></span>
+                                                    </div>
+                                                </div>  
+    
+                                                <br>
+    
+                                                <div id = "php" class="skills_data">
+                                                    <h3 class="skills_name">php</h3>
+                                                    <span class="skills_num sk_7">80%</span>
+                                                    <div class="skills_bar sk_7">
+                                                        <span class="skills_line sk_7" style="width: 90%;"></span>
+                                                    </div>
+                                                </div>  
+    
+                                                <div id = "mysql" class="skills_data">
+                                                    <h3 class="skills_name">MySQL</h3>
+                                                    <span class="skills_num sk_8">95%</span>
+                                                    <div class="skills_bar sk_8">
+                                                        <span class="skills_line sk_8" style="width: 90%;"></span>
+                                                    </div>
+                                                </div> 
+    
+                                                <div id = "laravel" class="skills_data">
+                                                    <h3 class="skills_name">Laravel</h3>
+                                                    <span class="skills_num sk_9">30%</span>
+                                                    <div class="skills_bar sk_9">
+                                                        <span class="skills_line sk_9" style="width: 90%;"></span>
+                                                    </div>
+                                                </div>
+                                                
+
+    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+    
+                                </div>
+                                
+                            </div>
+    
+    
+    
+    
+                            <!-- первый скилл -->
+    
+                            <!-- Второй скилл -->
+                        </div>
+    
+                </div>
+    
+                    <div class="right-arrow" onclick="nextSlide()">
+                        <span class="material-symbols-outlined arr">arrow_forward_ios</span>
+                    </div>
+    
+                        <div id="CloseModal" class="customise-theme-mobile">
+                            <div class="card-theme">
+                                <h2>Customize your view</h2>
+                                <span>Manage your color and background</span>
+                                <div style="display: none;" class="color">
+                                    <h3>Color</h3>
+                                    <button class="button button4" onclick="Green('TextGreen' , 'btn1_Green' , 'GreenCube')" ></button>
+                                    <button class="button button3" onclick="Standart()"></button>
+                                </div>
+                                <div class="background">
+                                    <h3 style="color: white;">background</h3>
+                                    <div class="choose-bg">
+                                        <div class="bg-2" onclick="changeThemeDim('dim-theme','card_dim_Theme')">
+                                            <span></span>
+                                            <h5>Dim</h5>
+                                        </div>
+                                        <div class="bg-3" onclick="changeThemeDark()">
+                                            <span></span>
+                                            <h5>Dark</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div id="contactMob" class="contactMe">
+                            <div class="contact-content">
+                                    <h2>Contact Me!</h2>
+                                    <input type="text" placeholder="Ivan" >
+                                    <input type="email" placeholder="example@gmail.com" >
+                                    <textarea placeholder="Messages" name="" id="" cols="30" rows="10"></textarea><br>
+                                    <input type="submit" class="btn1" >
+                            </div>
+                        </div>
+    
+            </main> 
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

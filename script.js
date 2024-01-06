@@ -337,23 +337,14 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 document.addEventListener("DOMContentLoaded", function () {
-    // Get loader elements
     const loader = document.getElementById('loader');
     const loaderAfter = document.getElementById('loader-after');
 
-    // Show loader
     loader.classList.remove('is-hidden');
 
-    // Simulate delay (You can replace this with actual loading logic)
     setTimeout(function () {
-      // Hide loader
       loader.classList.add('is-hidden');
       
-      // Show content after loader is hidden
       loaderAfter.classList.remove('is-hidden');
-      
-      // Optionally, you can remove the loader elements from the DOM
-      // loader.remove();
-      // loaderAfter.remove();
-    }, 1000); // Replace 3000 with the actual loading time in milliseconds
+    }, 1000);
   });
